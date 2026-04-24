@@ -10,7 +10,7 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-[#0a0f1d] text-slate-200">
+<body class="bg-[#0a0f1d] text-slate-200 selection:bg-blue-500/30">
     
     <div class="fixed inset-0 -z-10 overflow-hidden">
         <div class="absolute top-0 right-0 w-[50%] h-[50%] rounded-full bg-blue-900/10 blur-[120px]"></div>
@@ -29,11 +29,11 @@
         <header class="mb-24">
             <h1 class="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">Our <span class="text-blue-500">Solutions</span></h1>
             <p class="text-xl text-slate-400 leading-relaxed">
-                We specialize in building systems where data integrity and resource efficiency are non-negotiable.
+                We build high-concurrency systems where data integrity and resource efficiency are non-negotiable.
             </p>
         </header>
 
-        <div class="space-y-24">
+        <div class="space-y-32">
             <section class="group">
                 <span class="text-blue-500 font-mono text-sm mb-2 block tracking-[0.3em]">01 / EDUCATION</span>
                 <h2 class="text-3xl font-bold text-white mb-6">School Management & Results (SchoolRMS)</h2>
@@ -41,23 +41,65 @@
                     Institutional scaling requires more than just a database; it requires a workflow engine. SchoolRMS automates the heavy lifting of academic administration.
                 </p>
                 <ul class="grid md:grid-cols-2 gap-4">
-                    <li class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl text-sm hover:border-blue-500/30 transition-colors">
-                        <span class="text-blue-500 mr-2">▹</span> Automated Result Computation
+                    <li class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl text-sm hover:border-blue-500/30 transition-colors flex items-center">
+                        <span class="text-blue-500 mr-3">▹</span> Automated Result Computation
                     </li>
-                    <li class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl text-sm hover:border-blue-500/30 transition-colors">
-                        <span class="text-blue-500 mr-2">▹</span> Fee Tracking & Ledgering
+                    <li class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl text-sm hover:border-blue-500/30 transition-colors flex items-center">
+                        <span class="text-blue-500 mr-3">▹</span> Fee Tracking & Ledgering
                     </li>
-                    <li class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl text-sm hover:border-blue-500/30 transition-colors">
-                        <span class="text-blue-500 mr-2">▹</span> Student Lifecycle Management
+                    <li class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl text-sm hover:border-blue-500/30 transition-colors flex items-center">
+                        <span class="text-blue-500 mr-3">▹</span> Student Lifecycle Management
                     </li>
-                    <li class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl text-sm hover:border-blue-500/30 transition-colors">
-                        <span class="text-blue-500 mr-2">▹</span> Staff Performance Analytics
+                    <li class="bg-slate-900/50 border border-slate-800 p-4 rounded-xl text-sm hover:border-blue-500/30 transition-colors flex items-center">
+                        <span class="text-blue-500 mr-3">▹</span> Staff Performance Analytics
                     </li>
                 </ul>
             </section>
 
             <section class="group border-t border-slate-800 pt-24">
-                <span class="text-blue-500 font-mono text-sm mb-2 block tracking-[0.3em]">02 / AGRICULTURE</span>
+                <span class="text-blue-500 font-mono text-sm mb-2 block tracking-[0.3em]">02 / ENTERPRISE & RETAIL</span>
+                <h2 class="text-3xl font-bold text-white mb-6">Business Operations Intelligence</h2>
+                <p class="text-slate-400 mb-8 text-lg leading-relaxed">
+                    From small scale retail to large multi-branch enterprises, we provide the digital backbone for sales, inventory, and financial reporting.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="p-8 rounded-3xl bg-slate-900/30 border border-slate-800">
+                        <h3 class="text-white font-bold text-xl mb-4">Smart POS Systems</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Cloud-based Point of Sale systems that work offline and sync when connected. Real-time stock alerts and barcode integration.
+                        </p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-900/30 border border-slate-800">
+                        <h3 class="text-white font-bold text-xl mb-4">Digital Accounting</h3>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Automated bookkeeping, P&L statements, and tax-ready reports designed for business owners, not just accountants.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-center p-4">
+                        <div class="text-blue-500 font-bold text-2xl mb-1">Invoicing</div>
+                        <div class="text-[10px] text-slate-500 uppercase tracking-widest">Automation</div>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-blue-500 font-bold text-2xl mb-1">Inventory</div>
+                        <div class="text-[10px] text-slate-500 uppercase tracking-widest">Tracking</div>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-blue-500 font-bold text-2xl mb-1">Multi-User</div>
+                        <div class="text-[10px] text-slate-500 uppercase tracking-widest">Permissions</div>
+                    </div>
+                    <div class="text-center p-4">
+                        <div class="text-blue-500 font-bold text-2xl mb-1">Expense</div>
+                        <div class="text-[10px] text-slate-500 uppercase tracking-widest">Management</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="group border-t border-slate-800 pt-24">
+                <span class="text-blue-500 font-mono text-sm mb-2 block tracking-[0.3em]">03 / AGRICULTURE</span>
                 <h2 class="text-3xl font-bold text-white mb-6">Agricultural Data Intelligence</h2>
                 <p class="text-slate-400 mb-8 text-lg leading-relaxed">
                     Leveraging Agricultural Economics to create digital models for yield efficiency, livestock tracking, and supply chain transparency.
@@ -74,7 +116,7 @@
         <section class="mt-32 p-12 bg-blue-600 rounded-[40px] text-center shadow-2xl shadow-blue-500/20">
             <h2 class="text-3xl font-black text-white mb-4 text-balance">Ready to optimize your operations?</h2>
             <p class="text-blue-100 mb-8">Consult with our engineering team today via WhatsApp.</p>
-            <a href="https://wa.me/2348036869352?text=Hello%20Techstudio316%2C%20I'm%20interested%20in%20your%20services." 
+            <a href="https://wa.me/2348036869352?text=Hello%20Techstudio316%2C%20I'm%20interested%20in%20your%20business%20solutions." 
                class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-black hover:scale-105 transition-transform">
                 Start Conversation
             </a>
