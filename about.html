@@ -25,14 +25,15 @@
 
     <main class="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <nav class="flex justify-between items-center mb-16 md:mb-24 relative z-50">
-            <div class="text-xl md:text-2xl font-black tracking-tighter text-white">
-                <a href="/">TECHSTUDIO<span class="text-blue-500">316</span></a>
-            </div>
+            <a href="/" class="block shrink-0" aria-label="Techstudio316 Home">
+                <img src="logo.svg" alt="Techstudio316 Logo" class="h-12 w-44 sm:w-52 md:w-60 object-contain object-left">
+            </a>
             
             <div class="hidden md:flex gap-8 items-center text-sm font-medium uppercase tracking-widest">
                 <a href="solutions.html" class="opacity-70 hover:opacity-100 hover:text-blue-400 transition-all">Solutions</a>
                 <a href="portfolio.html" class="opacity-70 hover:opacity-100 hover:text-blue-400 transition-all">Portfolio</a>
-                <a href="about.html" class="opacity-70 hover:opacity-100 hover:text-blue-400 transition-all">About</a>
+                <a href="about.html" class="text-blue-400">About</a>
+                <a href="careers/" class="opacity-70 hover:opacity-100 hover:text-blue-400 transition-all">Careers</a>
                 <a href="https://wa.me/2348036869352?text=Hello%20Techstudio316%2C%20I'm%20interested%20in%20your%20services." 
                    target="_blank" rel="noopener noreferrer"
                    class="bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-full text-white transition-all shadow-lg shadow-blue-500/20 lowercase tracking-normal font-bold">
@@ -52,6 +53,7 @@
             <a href="solutions.html" class="text-2xl font-bold text-white">Solutions</a>
             <a href="portfolio.html" class="text-2xl font-bold text-white">Portfolio</a>
             <a href="about.html" class="text-2xl font-bold text-blue-400">About</a>
+            <a href="careers/" class="text-2xl font-bold text-white">Careers</a>
             <a href="https://wa.me/2348036869352" class="text-blue-400 text-xl font-bold">WhatsApp Contact</a>
             <button id="menu-close" class="mt-8 text-slate-500 uppercase tracking-widest text-xs border border-slate-800 px-6 py-2 rounded-full">Close</button>
         </div>
@@ -117,8 +119,8 @@
                         <span class="px-3 py-1.5 md:px-4 md:py-2 bg-slate-800 rounded-lg text-[10px] md:text-xs font-mono text-blue-300 border border-slate-700">Agri-Data</span>
                     </div>
                 </div>
-                <div class="w-24 h-24 md:w-1/3 md:aspect-square bg-gradient-to-tr from-blue-600 to-indigo-900 rounded-2xl md:rounded-3xl flex items-center justify-center text-4xl md:text-6xl shadow-2xl shrink-0">
-                    🚀
+                <div class="w-full md:w-1/3 aspect-[16/9] bg-gradient-to-tr from-blue-600 to-indigo-900 rounded-2xl md:rounded-3xl flex items-center justify-center p-6 shadow-2xl shrink-0">
+                    <img src="logo.svg" alt="Techstudio316 logo" class="w-full h-full object-contain">
                 </div>
             </div>
         </section>
@@ -136,7 +138,6 @@
         toggle.addEventListener('click', () => menu.classList.remove('hidden'));
         close.addEventListener('click', () => menu.classList.add('hidden'));
         
-        // Close menu when clicking a link
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => menu.classList.add('hidden'));
         });
